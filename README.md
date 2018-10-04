@@ -6,6 +6,8 @@
 + vim-jellybeans
 + vim-latexsuite
 
+You can use setup.sh to see if dependencies are installed.
+
 #### Install guide:
 ```
 git clone https://github.com/Hogfeldt/vimrc/
