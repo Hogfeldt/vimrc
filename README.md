@@ -1,12 +1,6 @@
 # vimrc
 
-#### Dependencies from the AUR repository:
-+ vim
-+ vim-airline
-+ vim-airline-themes
-+ vim-jellybeans
-+ vim-latexsuite
-
 #### Install guide:
 + Clone the repo
-+ Execute the setup.sh
++ Make a symbolic link to the .vimrc in this repo. You can use the script symlink.sh
++ Open vim and run :PlugInstall
