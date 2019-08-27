@@ -33,6 +33,15 @@ call plug#end()
 let g:tex_flavor='latex'
 :colorscheme jellybeans
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Vim-latex Configurations
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Set pdf as default output format
+let g:Tex_MultipleCompileFormats = 'pdf'
+let g:Tex_DefaultTargetFormat = 'pdf'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " General Configurations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
