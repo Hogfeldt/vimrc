@@ -27,12 +27,15 @@ Plug 'vim-airline/vim-airline'
 " Black Python formatter
 Plug 'ambv/black'
 
+" haskell intellisense
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
 call plug#end()
 
 " Plugins configurations
 let g:tex_flavor='latex'
 :colorscheme jellybeans
-
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-latex Configurations
@@ -54,6 +57,11 @@ syntax enable
 
 " Show matching brackets when text indicator is over them
 set showmatch
+
+" Create matching brackets
+inoremap { {}<ESC>ha
+inoremap ( ()<ESC>ha
+inoremap [ []<ESC>ha
 
 " Show line numbers
 set number
