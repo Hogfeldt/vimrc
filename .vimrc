@@ -28,18 +28,32 @@ Plug 'vim-airline/vim-airline'
 Plug 'ambv/black'
 
 " haskell intellisense
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" GTD 
+Plug 'phb1/gtd.vim'
+
+"R plugin
+Plug 'jalvesaq/Nvim-R', {'branch': 'stable'}
 
 call plug#end()
 
 " Plugins configurations
-let g:tex_flavor='latex'
 :colorscheme jellybeans
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+" GTD Configurations
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:filetype plugin on
+:let g:gtd#dir = '~/notes'
+:let g:gtd#default_context = 'hjem'
+:let g:gtd#default_action = 'inbox'
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Vim-latex Configurations
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:tex_flavor='latex'
 
 " Set pdf as default output format
 let g:Tex_MultipleCompileFormats = 'pdf'
